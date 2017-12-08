@@ -1,1 +1,1 @@
-build -t beginor/alpine:1.31.0 .
+build -t beginor/aria2:1.31.0 .
