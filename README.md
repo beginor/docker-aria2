@@ -31,8 +31,8 @@ services:
     image: beginor/aria2:1.34.0
     container_name: aria2
     ports:
-      - 6800:6800
-      - 6880:6880
+      - 6800:6800 # aria2 rpc port
+      - 6880:6880 # http port
     volumes:
 #      - ./aria2.conf:/aria2/aria2.conf
 #      - ./httpd.conf:/aria2/httpd.conf
@@ -40,7 +40,7 @@ services:
       - ~/Downloads:/aria2/downloads
 ```
 
-### 4. Run and enjoy with:
+### 4. Run and enjoy with `http://localhost:6880/`:
 
 ```sh
 docker-compose up -d
