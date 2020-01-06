@@ -9,7 +9,7 @@ aria2 and httpd (busybox), you can use any webui as you like!
 #### Pull from docker hub
 
 ```sh
-docker pull beginor/aria2:1.34.0
+docker pull beginor/aria2:1.35.0
 ```
 
 #### Or build it
@@ -28,7 +28,7 @@ cd aria2
 version: "3"
 services:
   aria2:
-    image: beginor/aria2:1.34.0
+    image: beginor/aria2:1.35.0
     container_name: aria2
     ports:
       - 6800:6800 # aria2 rpc port
